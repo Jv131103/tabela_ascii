@@ -1,6 +1,6 @@
 from tabulate import tabulate
 
-def Ascii(inicial, final=None, intervalo=abs(1)):
+def Ascii(inicial=0, final=None, intervalo=abs(1)):
     # Inserindo o cabeçalho
     cabecalho = ["CHARACTER", "DECIMAL", "OCTAL", "HEXADECIMAL", "BINÁRIO"]
     
@@ -47,4 +47,6 @@ def Ascii(inicial, final=None, intervalo=abs(1)):
 
     print(tabulate(dados, headers=cabecalho, tablefmt="grid", stralign="center"))
 
-Ascii(0, 32)
+if __name__ == "__main__":
+    print("BEM VINDO!")
+    ascii(0, 190) #Fique a vontade para verificar os dados, e mudar os valores
